@@ -1,0 +1,44 @@
+body {
+    margin:           0;
+    padding:          0;
+    background-color: #dce9f7;
+    font-family:      "Open Sans", Arial, sans-serif;
+}
+
+.app-banner {
+    background-color: #17375E;
+    padding:          24px 40px 28px 40px;
+    box-sizing:       border-box;
+    width:            100%;
+}
+
+.banner-title {
+    margin:      0 0 10px 0;
+    font-size:   50px;
+    font-weight: 700;
+    width:       100%;
+    color:       white;
+}
+
+.banner-intro {
+    margin:      10px;
+    font-size:   14px;
+    line-height: 1.7;
+    color:       rgba(255, 255, 255, 0.85);    
+    flex:        1;
+    min-width:   300px; 
+}
+
+.app-body {
+    padding: 24px 20px;
+}
+
+.panel-box {
+    display:          inline-block;
+    vertical-align:   top;
+    background-color: white;
+    border-radius:    10px;
+    box-shadow:       0 3px 12px rgba(0, 0, 0, 0.09);
+    padding:          18px 20px;
+    margin:           0 10px 20px 10px;
+}

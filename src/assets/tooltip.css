@@ -1,0 +1,49 @@
+.info-wrapper {
+    position:    relative;
+    display:     inline-flex;
+    align-items: center;
+}
+
+.info-icon {
+    cursor:      help;
+    font-size:   15px;
+    color:       #888888;
+    margin-left: 10px;
+    user-select: none;
+}
+
+.info-tooltip-text {
+    visibility:       hidden;
+    opacity:          0;
+    transition:       opacity 0.15s ease;
+
+    position:         absolute;
+    bottom:           calc(100% + 8px); 
+    left:             0;
+    z-index:          2000;
+
+    width:            240px;
+    padding:          8px 12px;
+    background-color: #333333;
+    color:            white;
+    font-size:        12px;
+    line-height:      1.5;
+    border-radius:    4px;
+    box-shadow:       0 2px 8px rgba(0, 0, 0, 0.2);
+    pointer-events:   none;
+}
+
+.info-tooltip-text::after {
+    content:      "";
+    position:     absolute;
+    top:          100%;    
+    left:         10px;    
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333333 transparent transparent transparent;
+}
+
+.info-wrapper:hover .info-tooltip-text {
+    visibility: visible;
+    opacity:    1;
+}
